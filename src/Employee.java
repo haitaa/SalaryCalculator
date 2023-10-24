@@ -35,6 +35,7 @@ public class Employee {
         double raise = 0;
         int year = 2023;
         if((year - this.hireYear) < 10) {
+            System.out.println("Maaşınıza %5 zam yapılacaktır.");
             raise += this.salary * 0.05;
             return raise;
         } else if((year - this.hireYear) > 9 && (year - this.hireYear) < 20){
